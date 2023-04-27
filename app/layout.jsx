@@ -8,7 +8,7 @@ import Projects from "./Projects/page"
 const sourceCodePro = Source_Code_Pro({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Portfolio Simona Stroe',
+  title: 'Portfolio Simona ',
 }
 
 export default function RootLayout({ children }) {
