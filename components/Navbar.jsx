@@ -13,7 +13,7 @@ export default function Navbar(){
         <div className= {`navbar relative z-40  `} >
             <div className="flex flex-row items-center navbar-name z-40 ">
                 <Image src={image} width={60} max-height={60} alt="logo" className="pr-2.5 "  priority="true" ></Image>
-                <p className="font-bold">SIMONA STROE</p>
+                <p className="font-bold">SIMONA </p>
             </div>
 
             <div className="nav-menu">
@@ -30,7 +30,7 @@ export default function Navbar(){
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </Menu.Button>
-                    <Menu.Items className="flex flex-col ">
+                    <Menu.Items className="flex flex-col border-transparent focus:border-transparent focus:ring-0 ">
                         <Menu.Item>
                             {({ active }) => (
                                 <a
