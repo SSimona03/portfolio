@@ -23,14 +23,14 @@ export default function Navbar(){
                 <Link href='/#contact'>Contact</Link>
             </div>
        
-            <div className="nav-mobile-menu text-right outline-transparent bg-white">
-                <Menu as="div" className="menu-box outline-transparent pt-8">
-                    <Menu.Button className="menu-btn pb-5 outline-transparent">
+            <div className="nav-mobile-menu text-right focus:outline-transparent focus:border-l-transparent bg-white">
+                <Menu as="div" className="menu-box focus:border-l-transparent pt-8">
+                    <Menu.Button className="menu-btn pb-5 focus:border-l-transparent">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </Menu.Button>
-                    <Menu.Items className="flex flex-col border-transparent focus:border-transparent focus:ring-0 outline-transparent">
+                    <Menu.Items className="flex flex-col border-transparent focus:border-transparent focus:ring-0 focus:outline-transparent">
                         <Menu.Item>
                             {({ active }) => (
                                 <a
