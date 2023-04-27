@@ -386,9 +386,11 @@ padding: 10px 3px;
   .about-info-skills{
     padding: 0rem 0rem 0rem 5rem;
   }
-
+  .about-info{
+    width:70vw;
+  }
   .prod-section{
-    with: 70vw;
+    width: 70vw;
   }
 
   .prod-section{
@@ -396,3 +398,6 @@ padding: 10px 3px;
   }
 
 }
+
+@media only screen and (min-width: 1300px) {}
+  
