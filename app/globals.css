@@ -254,12 +254,13 @@ padding: 10px 3px;
   transform: translateX(-50%);
   border-radius: 5px;
 }
-.prod-img , .prod-details * , .git-btn{
+.prod-details , .git-btn{
   margin: 0 auto;
   text-align: center;
 }
-.prod-img{
- overflow: hidden;
+.prod-img > *{
+  top : 0;
+  overflow: hidden;
 }
 
 .prod-img *{
