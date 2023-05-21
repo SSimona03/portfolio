@@ -16,6 +16,14 @@ const projectsData = [
     },
     {
         id: 2,
+        title: "Blog Samy Reads",
+        src:  "/blog.png",
+        description: `A blog site that contains books summaries. I added / changing CSS elements and implemented google analitics. Hosted in Digital Ocean. Theme by Ghost. `,
+        github: "https://samyreads.com/",
+        website: "https://samyreads.com/"
+    },
+    {
+        id: 3,
         title: "Meme Generator",
         src : "/meme.png",
         description: " The app is created using HTML, CSS, Javascript and React. It works by randomly selecting a meme image and you can add top and/or bottom text to it.",
@@ -23,7 +31,7 @@ const projectsData = [
         website: "/"
     },
     {
-        id: 3,
+        id: 4,
         title: "Travel Journal",
         src: "/travel-journal.png",
         description: "Is a journal website that containes a collection of cities and the travel details. It was created using HTML, CSS, Javascript and React.",
@@ -31,7 +39,7 @@ const projectsData = [
         website: "/"
     },
     {
-        id: 4,
+        id: 5,
         title: "Tenzies Game",
         src:  "/tenzies-game.png",
         description: "The objective of the game is to have all the dice with the same number. It was created using HTML, CSS, Javascript and React.",
@@ -62,7 +70,7 @@ const projectsData = [
                             <h1 className="text-xl font-bold pb-4">{x.title}</h1>
                             <p className="">{x.description}</p>
                                 <div className="hero-btn-section pt-10">
-                                <Link target="_blank" href={x.github} className="git-btn hero-btn ">Github Code</Link>
+                                <Link target="_blank" href={x.github} className="git-btn hero-btn ">{(x.github == "https://samyreads.com/") ? 'Website' : "Github Code"} </Link>
                                 </div>
                         </div >
                            

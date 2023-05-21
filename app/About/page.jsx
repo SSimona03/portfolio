@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 export default function About() {
 
 
-    const skills =["HTML", "CSS", "Tailwind", "Bootstrap", "JavaScript", "React", "Node.js", "Github", "Terminal", "Responsive Design", "MongoDB Basic", "Next.js 13"  ]
+    const skills =[ "Tailwind", "Bootstrap", "JavaScript", "React", "Node.js", "Github", "Terminal", "Responsive Design", "MongoDB Basic", "Next.js 13" , "HTML", "CSS",]
 
     return (
       <div className="about-section" id="about">
