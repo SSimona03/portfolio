@@ -4,6 +4,7 @@ import Footer from "../components/Footer"
 import About from "./About/page"
 import { Source_Code_Pro } from 'next/font/google'
 import Projects from "./Projects/page"
+import { Analytics } from '@vercel/analytics/react';
 
 const sourceCodePro = Source_Code_Pro({ subsets: ['latin'] })
 
@@ -21,7 +22,7 @@ export default function RootLayout({ children }) {
       <Projects />
       <Footer />
       </body>
-
+      <Analytics />
     </html>
   )
 }
