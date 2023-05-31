@@ -47,8 +47,8 @@ export default function About() {
             <p className="leading-7">
               {` I'm `}
               <strong>open to opportunities</strong> where I can contribute,
-              learn and grow. If you have a good opportunity that matches my
-              skills and experience then {`don't `}hesitate to{" "}
+              learn and grow. If you have a good project that matches my skills
+              and experience then {`don't `}hesitate to{" "}
               {
                 <Link href="/">
                   <strong>contact me.</strong>
