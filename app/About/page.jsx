@@ -30,10 +30,9 @@ export default function About() {
           <div className="text-lg font-bold ">Get To Know Me!</div>
           <div>
             <p className="leading-7">
-              As a <strong> web developer</strong>, I am passionate about
-              building user-friendly websites that look great and perform
-              flawlessly. With experience in HTML, CSS, and JavaScript,{" "}
-              {` I'm `}eager to apply my skills to create{" "}
+              I am passionate about building user-friendly websites that look
+              great and perform flawlessly. With experience in HTML, CSS, and
+              JavaScript, {` I'm `}eager to apply my skills to create{" "}
               <strong>innovative</strong> and <strong>engaging</strong> digital
               experiences.
             </p>
