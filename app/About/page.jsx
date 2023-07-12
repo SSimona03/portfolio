@@ -16,6 +16,8 @@ export default function About() {
     "Next.js 13",
     "HTML",
     "CSS",
+    "Sass",
+    "jQuery",
   ];
 
   return (

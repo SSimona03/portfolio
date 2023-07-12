@@ -2,17 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
-html{
+html {
   margin: 0;
   box-sizing: border-box;
 }
 
 :root {
- --yellow: #facf0f;
+  --yellow: #facf0f;
 }
-
-
 
 body {
   max-heigh: 100vh;
@@ -22,12 +19,9 @@ body {
   box-sizing: border-box;
 }
 
-
-
 /*********************************** navbar ******************/
 
-
-.navbar{
+.navbar {
   position: fixed;
   background: white;
   top: 0;
@@ -41,14 +35,13 @@ body {
   box-shadow: 2px 5px 90px 20px rgba(232, 182, 125, 0.4);
 }
 
-
-.nav-menu{
+.nav-menu {
   display: none;
 }
-.navbar-name{
+.navbar-name {
   padding-left: 20px;
 }
-.nav-mobile-menu{
+.nav-mobile-menu {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -56,33 +49,30 @@ body {
   padding-right: 30px;
   width: 100vw;
 }
-.menu-box *{
+.menu-box * {
   padding: 6px 0;
-  
 }
 
 /*********************************** hero section ******************/
-.hero-wallpaper{
-  background-image: url("../public/wallpaper.svg"); 
+.hero-wallpaper {
+  background-image: url("../public/wallpaper.svg");
   width: 100vw;
   height: 100vh;
   background-position: center;
   position: relative;
-  box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
-
-
-.hero-section{
+.hero-section {
   position: relative;
   top: 52%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   max-width: 90rem;
   width: 92%;
 }
 
-.hero-section h1{
+.hero-section h1 {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -90,53 +80,51 @@ body {
   color: #111;
   font-weight: 800;
 }
-.hero-section div{
-  
-    color: #333;
-    font-size: 1rem;
-    text-align: center;
-    width: 100%;
-    padding-top: 20px;
-    line-height: 1.5;
+.hero-section div {
+  color: #333;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  line-height: 1.5;
 }
-.hero-btn-section{
+.hero-btn-section {
   margin-top: 4rem;
   text-align: center;
 }
-.hero-btn{
-    background-color: var(--yellow);
-    padding: 1rem 3.2em;
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+.hero-btn {
+  background-color: var(--yellow);
+  padding: 1rem 3.2em;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-.hero-socials{
+.hero-socials {
   display: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background: #fff;
-  box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   padding: 0.5rem;
   border-radius: 5px;
 }
 
-.hero-socials > *{
-padding: 10px 3px;
+.hero-socials > * {
+  padding: 10px 3px;
 }
 
-.hero-scroll{
+.hero-scroll {
   position: absolute;
-    bottom: 7%;
-    left: 50%;
-    transform: translateX(-50%);
-    
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.mouse{
+.mouse {
   width: 23px;
   height: 40px;
   border: 2px solid #333;
@@ -145,8 +133,8 @@ padding: 10px 3px;
   overflow: hidden;
 }
 
-.mouse::before{
-  content: '';
+.mouse::before {
+  content: "";
   width: 5px;
   height: 5px;
   position: absolute;
@@ -161,23 +149,22 @@ padding: 10px 3px;
 }
 @keyframes wheel {
   to {
-      opacity: 0;
-      top: 27px
+    opacity: 0;
+    top: 27px;
   }
 }
 
 @-webkit-keyframes wheel {
   to {
-      opacity: 0;
-      top: 27px
+    opacity: 0;
+    top: 27px;
   }
 }
 /*********************************** About ******************/
-.about-section{
+.about-section {
   padding-top: 3rem;
-  
 }
-.sections-title{
+.sections-title {
   text-align: center;
   padding: 70px 0 40px 0;
   font-size: 1.7rem;
@@ -185,7 +172,7 @@ padding: 10px 3px;
 }
 
 .about-span-line::after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(100% + 10rem);
   height: 5px;
@@ -195,13 +182,13 @@ padding: 10px 3px;
   transform: translateX(-50%);
   border-radius: 5px;
 }
-.sections-intro{
+.sections-intro {
   text-align: center;
   padding-bottom: 20px;
   width: 70%;
   margin: 0 auto 35px auto;
 }
-.about-info{
+.about-info {
   margin: 40px auto;
   width: 80vw;
   text-align: left;
@@ -214,37 +201,32 @@ padding: 10px 3px;
   padding: 10px 0;
 }
 
-.about-info-skills-box{
+.about-info-skills-box {
   display: flex;
   flex-wrap: wrap;
 }
-.about-info-skills{
+.about-info-skills {
   padding-top: 2rem;
 }
 
-.skill{
+.skill {
   padding: 0.5rem 1rem;
   margin: 10px 10px 10px 0;
   font-size: 1rem;
-  background: rgba(153,153,153,.2);
+  background: rgba(153, 153, 153, 0.2);
   border-radius: 5px;
   font-weight: 600;
   color: #666;
 }
 
 /*********************************** Projects ******************/
-.prod-box{
+
+.prod-box {
   padding-top: 3rem;
-}
-.prod-section{
-  display: flex;
-  flex-direction: column;
-  width: 85vw;
-  margin: 0 auto 9rem auto;
 }
 
 .about-span-line::after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(100% - 2rem);
   height: 5px;
@@ -254,18 +236,22 @@ padding: 10px 3px;
   transform: translateX(-50%);
   border-radius: 5px;
 }
-.prod-details , .git-btn{
-  margin: 0 auto;
+.prod-details,
+.git-btn {
   text-align: center;
 }
-.prod-img > *{
-  top : 0;
-  overflow: hidden;
+.prod-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 400px;
+  margin-bottom: 5rem;
 }
 
-.prod-img *{
-  heigh: 100px;
-  object-fit: cover;
+.prod-img {
+  margin: auto 0;
+  height: 200px;
+  position: relative;
 }
 
 /*********************************** Footer ******************/
@@ -284,42 +270,39 @@ padding: 10px 3px;
   font-size: 1.1rem;
 }
 
-
 .main-footer__lower {
   padding: 1rem 0;
   border-top: 1px solid #444;
   color: #eee;
   font-size: 0.8rem;
-  text-align: center
+  text-align: center;
 }
 
-.main-footer__icon{
+.main-footer__icon {
   z-index: 2;
 }
-.main-footer__social-cont{
+.main-footer__social-cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
 }
-.main-footer__icon{
+.main-footer__icon {
   margin-right: 0.6rem;
   width: 1.8rem;
   background: white;
   border-radius: 5px;
   padding: 1px;
-  
 }
-
 
 /*********************************** media ******************/
 
 @media only screen and (min-width: 720px) {
-  .nav-mobile-menu{
+  .nav-mobile-menu {
     display: none;
   }
 
-  .nav-menu{
+  .nav-menu {
     display: flex;
     align-items: center;
     padding-right: 30px;
@@ -331,74 +314,93 @@ padding: 10px 3px;
     font-weight: 700;
   }
   .nav-menu > *:hover {
-    color: var(--yellow)
+    color: var(--yellow);
   }
 
-  .hero-section{
+  .hero-section {
     top: 50%;
   }
-  .hero-section h1{
+  .hero-section h1 {
     padding-bottom: 25px;
     font-size: 3.6rem;
   }
-  
-  .hero-text > p{
-   padding: 0 100px;
-   font-size: 1.4rem;
+
+  .hero-text > p {
+    padding: 0 100px;
+    font-size: 1.4rem;
   }
-  .hero-btn{
-    padding: 1,1rem 5.5em;
+  .hero-btn {
+    padding: 1, 1rem 5.5em;
     font-size: 1rem;
   }
-  .hero-socials{
-    display:block;
-  }
- 
-  .prod-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+  .hero-socials {
+    display: block;
   }
 
-  .prod-img , .prod-details * , .git-btn{
+  .prod-details *,
+  .git-btn {
     text-align: left;
   }
-  .prod-img{
-    margin : auto 0;
-  }
-  
+
   .main-footer__upper {
-  flex-direction: row;
-  margin: 0 auto;
-  padding: 2rem 0rem;
-  text-align: left;
-  font-size: 1rem;
-  width: 80vw;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+    text-align: left;
+    font-size: 1rem;
+    width: 80vw;
   }
-  .main-footer__social-cont{
+  .main-footer__social-cont {
     margin: 0 0;
+  }
+
+  .prod-section {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+  }
+  .prod-img {
+    margin: auto 0;
+    flex-basis: 60%;
+    height: 300px;
+    position: relative;
+  }
+
+  .prod-details {
+    flex-basis: 40%;
   }
 }
 
 @media only screen and (min-width: 950px) {
-  .about-info{
+  .about-info {
     flex-direction: row;
   }
-  .about-info-skills{
+  .about-info-skills {
     padding: 0rem 0rem 0rem 5rem;
   }
-  .about-info{
-    width:70vw;
-  }
-  .prod-section{
+  .about-info {
     width: 70vw;
   }
 
-  .prod-section{
-    gap: 4rem;
+  /*********************************** Projects ******************/
+
+  .prod-img {
+    flex-basis: 55%;
   }
 
+  .prod-details {
+    flex-basis: 45%;
+  }
 }
 
-@media only screen and (min-width: 1300px) {}
-  
+@media only screen and (min-width: 1200px) {
+  .prod-img {
+    flex-basis: 40%;
+  }
+
+  .prod-details {
+    flex-basis: 60%;
+  }
+}

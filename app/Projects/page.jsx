@@ -23,12 +23,10 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: "Meme Generator",
-      src: "/meme.png",
-      description:
-        " The app is created using HTML, CSS, Javascript and React. It works by randomly selecting a meme image and you can add top and/or bottom text to it.",
-      github:
-        "https://github.com/SSimona03/react/tree/main/react-memeGenerator-03",
+      title: "Bookie Mock Website",
+      src: "/booki.png",
+      description: " A mock booking website using HTML and CSS.",
+      github: "https://github.com/SSimona03/mock_booking_website",
       website: "/",
     },
     {
@@ -50,10 +48,20 @@ export default function Projects() {
       github: "https://github.com/SSimona03/react/tree/main/react-game-app04",
       website: "/",
     },
+    {
+      id: 6,
+      title: "Meme Generator",
+      src: "/meme.png",
+      description:
+        " The app is created using HTML, CSS, Javascript and React. It works by randomly selecting a meme image and you can add top and/or bottom text to it.",
+      github:
+        "https://github.com/SSimona03/react/tree/main/react-memeGenerator-03",
+      website: "/",
+    },
   ];
 
   return (
-    <div className="prod-box " id="projects">
+    <div className="prod-box mx-10" id="projects">
       <div className="pb-3">
         <div className="sections-title about-span-line relative">Projects</div>
         <p className="sections-intro">
@@ -63,22 +71,17 @@ export default function Projects() {
       </div>
 
       {projectsData.map((x) => (
-        <div key={x.id} className="prod-section">
+        <div key={x.id} className="prod-section mx-auto">
           <div className="prod-img">
             <Link target="_blank" href={x.website}>
-              <Image
-                className="test"
-                src={x.src}
-                alt="project-image"
-                width={550}
-                height={200}
-              ></Image>
+              <Image src={x.src} alt="project-image" fill={true}></Image>
             </Link>
           </div>
-          <div className="prod-details pt-10">
-            <h1 className="text-xl font-bold pb-4">{x.title}</h1>
+
+          <div className="prod-details ">
+            <h1 className="text-xl font-bold py-4">{x.title}</h1>
             <p className="">{x.description}</p>
-            <div className="hero-btn-section pt-10">
+            <div className="hero-btn-section ">
               <Link
                 target="_blank"
                 href={x.github}
