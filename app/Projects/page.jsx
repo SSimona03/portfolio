@@ -27,7 +27,7 @@ export default function Projects() {
       src: "/booki.png",
       description: " A mock booking website using HTML and CSS.",
       github: "https://github.com/SSimona03/mock_booking_website",
-      website: "/",
+      website: "https://ssimona03.github.io/mock_booking_website/",
     },
     {
       id: 4,
