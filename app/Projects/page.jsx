@@ -9,7 +9,7 @@ export default function Projects() {
       title: "Food APP",
       src: "/food-app.png",
       description:
-        "Food APP is a work in progress aplication that will show you what foods you can eat based on any of the symptoms for IBS, Gastritis/Acid Reflux and Gallbalder. In the app you can select multiple diets and once you log in you can edit the results. The application is using: Html, CSS, Javascript, React, Node 13, MongoDB, Firebase, Tailwind.",
+        "The Food APP, currently in development, suggests suitable foods for Gastritis/Acid Reflux and other issues based on symptoms. Created using Html, CSS, Javascript, React, Node 13, MongoDB, and Tailwind.",
       github: "https://github.com/SSimona03/food-app",
       website: "https://s-food-app.vercel.app",
     },
@@ -24,17 +24,47 @@ export default function Projects() {
     {
       id: 3,
       title: "Bookie Mock Website",
-      src: "/booki.png",
-      description: " A mock booking website using HTML and CSS.",
+      src: "/bookie.png",
+      description: "Frontend mock website HTML CSS",
       github: "https://github.com/SSimona03/mock_booking_website",
       website: "https://ssimona03.github.io/mock_booking_website/",
     },
     {
+      id: 7,
+      title: "Oh-My-Food",
+      src: "/menu-rest.png",
+      description:
+        "Frontend mock website HTML SASS",
+      github:
+        "https://github.com/SSimona03/ohmyfood-mock-p2",
+      website: "https://ssimona03.github.io/ohmyfood-mock-p2/",
+    },
+    {
+      id: 8,
+      title: "Chart and Search",
+      src: "/chart.png",
+      description:
+        "Two pages, one for a search through Shakespeare work and the other one is a chart: React Next13, Chart.js/React library",
+      github:
+        "https://github.com/SSimona03/sanger-pages",
+      website: "https://next13-pages.vercel.app",
+    },
+    {
+      id: 9,
+      title: "Chart with Highcharts",
+      src: "/highcharts.png",
+      description:
+        " React Next13, Highcharts/React library",
+      github:
+        "https://github.com/SSimona03/website-display-graphic-data-csv",
+      website: "https://website-display-graphic-data-csv.vercel.app/",
+    },
+    {
       id: 4,
       title: "Travel Journal",
-      src: "/travel-journal.png",
-      description:
-        "Is a journal website that containes a collection of cities and the travel details. It was created using HTML, CSS, Javascript and React.",
+      src: "/travel.png",
+      description: "Static page using HTML, CSS, Javascript and React."
+      ,
       github:
         "https://github.com/SSimona03/react/tree/main/react-travel-journal-01",
       website: "/",
@@ -42,7 +72,7 @@ export default function Projects() {
     {
       id: 5,
       title: "Tenzies Game",
-      src: "/tenzies-game.png",
+      src: "/game.png",
       description:
         "The objective of the game is to have all the dice with the same number. It was created using HTML, CSS, Javascript and React.",
       github: "https://github.com/SSimona03/react/tree/main/react-game-app04",
@@ -66,17 +96,24 @@ export default function Projects() {
         <div className="sections-title about-span-line relative">Projects</div>
         <p className="sections-intro">
           {" "}
-          {`In this section, you will find a showcase of some of my personal projects that I have completed or I'm currently working on.`}
+          {`In this section, you will find a showcase of some of my personal projects that I have completed or I'm currently working on.`}  <br /> <br />
+          {`The clickable images have the projects live.`}
         </p>
       </div>
 
       {projectsData.map((x) => (
-        <div key={x.id} className="prod-section mx-auto">
-          <div className="prod-img">
-            <Link target="_blank" href={x.website}>
-              <Image src={x.src} alt="project-image" fill={true}></Image>
-            </Link>
+        <div key={x.id} className="prod-section mx-auto my-20 flex flex-col justify-center content-center items-center ">
+          <div className="prod-img w-[400px]">
+            {(x.website == "/") ? <Image src={x.src} alt="project-image" fill={true} className="object-cover border w-full rounded-md hover:drop-shadow-xl"></Image>
+              :
+              <Link target="_blank" href={x.website} className="">
+                {<Image src={x.src} alt="project-image" fill={true} className="object-cover border w-full rounded-md hover:drop-shadow-xl"></Image> /*  */}
+              </Link>
+
+
+            }
           </div>
+
 
           <div className="prod-details ">
             <h1 className="text-xl font-bold py-4">{x.title}</h1>
@@ -85,16 +122,20 @@ export default function Projects() {
               <Link
                 target="_blank"
                 href={x.github}
-                className="git-btn hero-btn "
+                className="git-btn hero-btn hover:brightness-105"
               >
                 {x.github == "https://samyreads.com/"
                   ? "Website"
                   : "Github Code"}{" "}
               </Link>
+
             </div>
           </div>
         </div>
-      ))}
-    </div>
+      ))
+      }
+
+
+    </div >
   );
 }
