@@ -240,13 +240,13 @@ body {
 .git-btn {
   text-align: center;
 }
-.prod-section {
+/* .prod-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 2rem;
-  max-width: 400px;
+
   margin-bottom: 5rem;
-}
+} */
 
 .prod-img {
   margin: auto 0;
@@ -353,23 +353,17 @@ body {
   .main-footer__social-cont {
     margin: 0 0;
   }
-
+  /************* Prod ************ */
   .prod-section {
-    display: flex;
     flex-direction: row;
-    gap: 2rem;
-    max-width: 1200px;
-    margin-bottom: 2rem;
   }
   .prod-img {
-    margin: auto 0;
-    flex-basis: 60%;
-    height: 300px;
-    position: relative;
+    width: 300px;
   }
 
   .prod-details {
-    flex-basis: 40%;
+    width: 500px;
+    margin-left: 20px;
   }
 }
 
@@ -386,21 +380,21 @@ body {
 
   /*********************************** Projects ******************/
 
-  .prod-img {
+  /* .prod-img {
     flex-basis: 55%;
   }
 
   .prod-details {
     flex-basis: 45%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1200px) {
   .prod-img {
-    flex-basis: 40%;
+    width: 350px;
   }
 
-  .prod-details {
+  /* .prod-details {
     flex-basis: 60%;
-  }
+  }  */
 }
