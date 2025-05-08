@@ -8,6 +8,7 @@ export default function About() {
     "Bootstrap",
     "JavaScript",
     "React",
+    "SolidJS",
     "Node.js",
     "Github",
     "Terminal",

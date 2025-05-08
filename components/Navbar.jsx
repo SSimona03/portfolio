@@ -13,7 +13,7 @@ export default function Navbar(){
         <div className= {`navbar relative z-40  `} >
             <div className="flex flex-row items-center navbar-name z-40 ">
                 <Image src={image} width={60} max-height={60} alt="logo" className="pr-2.5 "  priority="true" ></Image>
-                <Link href="./" className="font-bold">SIMONA</Link>
+                <Link href="./" className="font-bold">Bella</Link>
             </div>
 
             <div className="nav-menu">

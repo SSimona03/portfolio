@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </div>
       <div className="hero-section">
-        <h1 className="">{`Hi, I'm Simona `}</h1>
+        <h1 className="">{`Hi, I'm Bella `}</h1>
         <div className="hero-text">
           <p>{`As a Web Developer, I'm enthusiastic about learning and growing my skills in building exceptional user interfaces for websites and web applications.`}</p>
         </div>

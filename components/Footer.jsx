@@ -9,7 +9,7 @@ export default function Footer() {
     <div className="main-container">
       <div className="main-footer__upper">
             <div className="pb-5">
-                <Link href="/" className="font-bold pb-2 text-lg">Simona</Link>
+                <Link href="/" className="font-bold pb-2 text-lg">Bella</Link>
                
             </div>
             <div className="pb-5 main-footer__social-cont">

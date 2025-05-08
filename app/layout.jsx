@@ -9,7 +9,7 @@ import { Analytics } from '@vercel/analytics/react';
 const sourceCodePro = Source_Code_Pro({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Portfolio Simona ',
+  title: 'Portfolio Bella ',
 }
 
 export default function RootLayout({ children }) {
